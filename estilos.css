@@ -1,0 +1,226 @@
+.trajan12 {
+	font-family: "Lucida Sans Unicode", Calibri, Helvetica-Narrow;
+	font-size: 12px;
+	font-weight: 400;
+	color: #666;
+}
+.trajan10pie {
+	font-family: "Lucida Sans Unicode", Calibri, Helvetica-Narrow;
+	font-size: 10px;
+	font-weight: 400;
+	color: #000;
+	text-align: center;
+}
+
+.bordo {
+	font-family: "Lucida Sans Unicode", Calibri, Helvetica-Narrow;
+	font-size: 12px;
+	color: #75102A;
+	font-weight: 600;
+}
+#wrap_contenedor1 {
+	position:absolute;
+	width:1000px;
+	height:1226px;
+	z-index:1;
+	left: 50%;
+	top: 0px;
+	margin-left: -500px;
+}
+#header {
+	position:absolute;
+	width:100%;
+	height:176px;
+	z-index:1;
+}
+#wrap_general {
+	position:absolute;
+	width:100%;
+	height:1228px;
+	z-index:1;
+	margin-top: 0px;
+	text-align: center;
+}
+#wrap_main {
+	position:absolute;
+	width:1000px;
+	height:600px;
+	z-index:1;
+	left: 50%;
+	top: 20px;
+	margin-left: -500px;
+}
+#header_logo {
+	position:absolute;
+	width:236px;
+	height:191px;
+	z-index:1;
+	left: 3px;
+	top: 4px;
+}
+#idiomas {
+	position:absolute;
+	width:210px;
+	height:21px;
+	z-index:2;
+	left: 781px;
+	top: 18px;
+	font-family: "Lucida Sans Unicode", Calibri, Helvetica-Narrow;
+	font-size: 11px;
+	color: #666;
+	text-align: right;
+}
+#botonera1 {
+	position:absolute;
+	width:629px;
+	height:78px;
+	z-index:3;
+	left: 339px;
+	top: 75px;
+}
+#botonera2 {
+	position:absolute;
+	width:100%;
+	height:29px;
+	z-index:4;
+	left: 0px;
+	top: 173px;
+}
+#banner_foto {
+	position:absolute;
+	width:100%;
+	height:257px;
+	z-index:2;
+	left: 0px;
+	top: 220px;
+}
+#textos_div {
+	position:absolute;
+	width:638px;
+	height:627px;
+	z-index:3;
+	left: 326px;
+	top: 506px;
+	text-align: justify;
+	font-family: "Lucida Sans Unicode", Calibri, Helvetica-Narrow;
+	font-size: 13px;
+	font-weight: 200;
+	text-decoration: none;
+	line-height: 16px;
+}
+.txt_sub_bot_socios {
+	font-family: "Trajan Pro", Georgia, Candara;
+	font-size: 12px;
+	color: #666;
+	line-height: 8px;
+}
+
+#pie
+ {
+	position:absolute;
+	width:100%;
+	height:95px;
+	z-index:4;
+	left: 0px;
+	top: 1133px;
+	text-align: center;
+	background-image: url(imas/pie.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+a.estilo2:link {
+	color: #666;
+	text-decoration: none;
+	font-family: "Lucida Sans Unicode", Calibri, Helvetica-Narrow;
+	font-size: 13px;
+	font-weight: 700;
+}
+ a.estilo2:visited {
+	color: #666;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: 700;
+}
+ a.estilo2:hover {
+	color: #600;
+	font-size: 13px;
+	font-weight: 700;
+}
+ a.estilo2:active {
+	color: #666;
+	text-decoration: none;
+	font-family: "Lucida Sans Unicode", Calibri, Helvetica-Narrow;
+	font-size: 13px;
+	font-weight: 700;
+}
+.boton_on {
+	color: #000;
+	text-decoration: none;
+	font-family: "Lucida Sans Unicode", Calibri, Helvetica-Narrow;
+	font-size: 13px;
+	font-weight: 700;
+}
+a.estilo3:link {
+	color: #670804;
+	text-decoration: none;
+	font-family: "Lucida Sans Unicode", Calibri, Helvetica-Narrow;
+	font-size: 11px;
+	font-weight: 300;
+}
+ a.estilo3:visited {
+	color: #600;
+	text-decoration: none
+}
+ a.estilo3:hover {
+	color: #600
+}
+ a.estilo3:active {
+	color: #999;
+	text-decoration: none;
+	font-family: "Lucida Sans Unicode", Calibri, Helvetica-Narrow;
+}
+a.estilo4:link {
+	color: #666;
+	text-decoration: none;
+	font-family: "Lucida Sans Unicode", Calibri, Helvetica-Narrow;
+	font-size: 12px;
+	font-weight: 300;
+}
+ a.estilo4:visited {
+	color: #600;
+	font-size: 12px;
+	text-decoration: none
+}
+ a.estilo4:hover {
+	color: #600;
+	font-size: 12px;
+}
+ a.estilo4:active {
+	color: #999;
+	text-decoration: none;
+	font-family: "Lucida Sans Unicode", Calibri, Helvetica-Narrow;
+	font-size: 12px;
+}
+.mini {
+	font-family: "Lucida Sans Unicode", Calibri, Helvetica-Narrow;
+	font-size: 9px;
+	color: #999;
+}
+#socio_txt {
+	position:absolute;
+	width:507px;
+	height:606px;
+	z-index:2;
+	left: 133px;
+	top: 17px;
+	text-align: justify;
+}
+.blaind {
+	font-family: "Lucida Sans Unicode", Calibri, Helvetica-Narrow;
+	font-size: 9px;
+	color: #FFF;
+}
+.versales {
+	font-variant: small-caps;
+}

@@ -1,0 +1,220 @@
+body {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color: #666666;
+  	background-image: url(images/banner_ayc_imagen.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	margin-top: 100px;
+}
+{
+	margin: 0;
+	padding-top: 0;
+}
+.head
+{
+	height: 185px;
+	background-image: url(images/banner_ayc_imagen.png);
+	background-repeat: no-repeat;
+	width: 265px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.error {
+	font-size: 11px; 
+	color: #ff0000; 
+	font-weight: bold; 
+}
+a#active_menu {
+	font-weight: bold; 
+	color: #3E3E3E;
+	font-style: italic;
+	font-size: 1em
+}
+a#active_menu:hover {
+	color: #000; 
+	text-decoration: none
+}
+a:hover {
+	color: #123456; 
+	text-decoration: none
+}
+a:link {
+	color: #ff0000; 
+	text-decoration: none
+}
+a:visited {
+	color: #ff8502; 
+	text-decoration: none
+}
+a.mainlevel:link, a.mainlevel:visited {
+	font-size: 11px; 
+	padding-bottom: 3px; 
+	padding-top: 2px;
+	padding-left: 20px;
+	width: 170px; 
+	line-height: 20px; 
+	letter-spacing: 0px; 
+	text-align: center; 
+	text-decoration: none
+}
+a.mainlevel:hover {
+	color: #A5D05C;
+	background-image: url(images/menu_bg_ac.png);
+	background-repeat: no-repeat 
+}
+a.mainlevel_active-top:hover {
+	color: #123456; 
+	background-color: #fafafa
+}
+a.mainlevel-top:hover {
+	color: #123456; 
+	background-color: #f8fcfd
+}
+a.mainlevel#active_menu {
+	background-image: url(images/menu_bg_ac.png);
+	background-repeat: no-repeat;
+}
+a.mainlevel-top#active_menu-top {
+	border-right: #ededed 1px solid; 
+	padding-right: 8px; display: block; 
+	padding-left: 8px; 
+	font-weight: normal; 
+	font-size: 11px; 
+	margin-bottom: 0px; 
+	width: 80px; color: #123456; 
+	line-height: 59px; 
+	height: 59px; 
+	background-color: #f8fcfd; 
+	text-align: center; 
+	text-decoration: none
+}
+a.readon:link, a.readon:visited {
+	clear: right; 
+	display: block; 
+	font-size: 11px; 
+	float: none; 
+	background-image: url(images/btn1.gif); 
+	color: #009EE0; 
+	background-repeat: no-repeat;
+	padding-left: 9px; 
+}
+a.readon:hover, .comment:hover {
+	color: #fff; 
+	background-color: transparent; 
+	text-decoration: none
+}
+a.sublevel:link, a.sublevel:visited  {
+	display: left; 
+	font-size: 11px; 
+	width: 170px; 
+	color: #A5D05C; 
+	letter-spacing: 2px; 
+	text-align: left; 
+	text-decoration: none;
+	padding-left: 9px
+}
+a.sublevel:hover {
+	color: #c0c0c0; 
+	text-decoration: none
+}
+a.weblinks:link, a.weblinks:visited {
+	font-weight: normal; 
+	color: #ff9900; 
+	text-decoration: none
+}
+a.weblinks:hover {
+	color: #999999; 
+	text-decoration: underline
+}
+li {
+	line-height: 20px; 
+	list-style-type: square
+}
+td {
+	font-size: 11px; 
+	color: #123456; 
+	line-height: 17px; 
+	letter-spacing: 0px;
+	padding: 0.1em 0.1em
+}
+tr {
+	font-size: 11px; 
+	color: #123456; 
+	line-height: 17px; 
+	letter-spacing: 0px
+}
+.button {
+	margin-top: 3px;
+	font-size: 11px;
+	border-right: #2E82A4 1px solid; 
+	border-top: #2E82A4 1px solid; 
+	border-left: #2E82A4 1px solid;
+	border-bottom: #2E82A4 1px solid; 
+	background-color: #cccccc
+}
+.button:hover {
+	color: #009EE0
+}
+.mainbody {
+	border-left: #2E82A4 1px solid; 
+	border-right: #2E82A4 1px solid; 
+	text-align: left
+}
+#mainbody li {
+	list-style-position: inside; 
+	line-height: 20px; 
+	list-style-type: square
+}
+img {
+	border-right: 0px; 
+	border-top: 0px; 
+	border-left: 0px; 
+	border-bottom: 0px
+}
+input.inputbox, input.inputbox#mod_login_password {
+	margin-top: 3px;
+	background-color: #f1efe8;
+	font-size: 11px; 
+	color: #666666; 
+	border-right: #999999 1px solid; 
+	border-top: #999999 1px solid; 
+	border-left: #999999 1px solid; 
+	border-bottom: #999999 1px solid
+}
+h1{font-size:1.8em;line-height:1.5em;margin:0 0 0.5em;padding:0;color:#123456}
+h2{font-size:1.5em;line-height:1.5em;margin:0 0 0.5em;padding:0;color:#123456}
+h3{font-size:1.3em;line-height:1.3em;margin:0 0 0.5em;padding:0;color:#123456}
+h4{font-size:1.2em;line-height:1.3em;margin:0 0 0.25em;padding:0;color:#123456}
+h5{font-size:1.1em;line-height:1.3em;margin:0 0 0.25em;padding:0;color:#123456}
+h6{font-size:1em;line-height:1.3em;margin:0 0 0.25em;padding:0;color:#123456}
+p {
+	font-size:1em;
+	margin:0 0 1.5em;
+	padding:0;
+	line-height:1.4em
+	}
+
+ul {
+	line-height:1.4em;
+	margin:0 0 1.5em;
+	padding:0
+}
+li {
+	list-style-type:none;
+	
+}
+a, a:link {
+color: #000;
+}
+a:visited {
+	color: #333;
+}
+a:hover, a:active {
+	color: #009EE0;
+}
+
+ul li a, ul li a:link {
+	border-color: #bbb;
+}
