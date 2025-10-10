@@ -1,0 +1,35 @@
+# Ignorar dependencias de Composer
+/vendor/
+
+# Ignorar archivos de configuración de entorno
+.env
+.env.local
+.env.dist
+
+# Ignorar archivos de registro y temporales
+/logs/
+*.log
+/tmp/
+/temp/
+
+# Ignorar archivos de caché
+/cache/
+.cache/
+
+# Ignorar archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar directorios de IDEs (como el que mencionaste)
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignorar archivos de compilación o subida
+/dist/
+/build/
+/public/build/
+
+# Ignorar archivos de configuración local específicos
+config.local.php
