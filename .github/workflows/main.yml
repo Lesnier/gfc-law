@@ -42,7 +42,7 @@ jobs:
         run: |
           if [[ "${{ steps.env.outputs.environment }}" == "production" ]]; then
             # Configuración de producción
-            cat > auditoria/config.php << 'EOF'
+            cat > auditoria/config.php <<- 'EOF'
             <?php
             // CONFIGURACIÓN DE PRODUCCIÓN
             $HOSTNAME = "${{ secrets.PROD_DB_HOST }}";
@@ -54,7 +54,7 @@ jobs:
             EOF
           else
             # Configuración de desarrollo
-            cat > auditoria/config.php << 'EOF'
+            cat > auditoria/config.php <<- 'EOF'
             <?php
             // CONFIGURACIÓN DE DESARROLLO
             $HOSTNAME = "${{ secrets.DEV_DB_HOST }}";
