@@ -69,9 +69,11 @@ jobs:
       - name: Validate PHP syntax
         run: |
           find . -name "*.php" -exec php -l {} \; > /dev/null
-          echo "✅ PHP syntax validation passed"
+          echo "✅ FTP Secrets ${{ secrets.DEV_FTP_HOST }}  ${{ secrets.PROD_FTP_HOST }}"
 
       - name: Deploy to Development Server
+        run: |
+          echo "✅ PHP syntax validation passed"
         if: steps.env.outputs.environment == 'development'
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
