@@ -51,7 +51,7 @@ jobs:
             $DATABASE = "${{ secrets.PROD_DB_NAME }}";
             $CFG_SUBCARPETA = "images";
             ?>
-            EOF
+          EOF
           else
             # Configuración de desarrollo
             cat > auditoria/config.php <<- 'EOF'
@@ -63,7 +63,7 @@ jobs:
             $DATABASE = "${{ secrets.DEV_DB_NAME }}";
             $CFG_SUBCARPETA = "images";
             ?>
-            EOF
+          EOF
           fi
 
       - name: Validate PHP syntax
