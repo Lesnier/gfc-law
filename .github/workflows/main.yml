@@ -1,0 +1,136 @@
+name: Deploy PHP Application
+ on:
+ push:
+ branches: - develop    - master     
+# Deploy a desarrollo
+ # Deploy a producción (futuro)
+ # Permitir ejecución manual
+ workflow_dispatch:
+ inputs:
+ environment:
+ description: 'Environment to deploy'
+ required: true
+ default: 'development'
+ type: choice
+ options:- development- production
+ jobs:
+ deploy:
+ runs-on: ubuntu-latest
+ steps:- name: 
+�
+�
+ Checkout code
+ uses: actions/checkout@v4- name: 
+�
+�
+ Setup PHP
+ uses: shivammathur/setup-php@v2
+ with:
+ php-version: '8.1'- name: 
+�
+�
+ Determine environment
+ id: env
+ run: |
+        if [[ "${{ github.ref }}" == "refs/heads/master" ]] || [[ "${{ github.event.inputs.environment }}" == "production" ]
+          echo "environment=production" >> $GITHUB_OUTPUT
+          echo "
+ 🏭
+ Deploying to PRODUCTION"
+        else
+          echo "environment=development" >> $GITHUB_OUTPUT
+          echo "
+ 🔧
+ Deploying to DEVELOPMENT"
+        fi- name: 
+�
+�
+ Generate config.php
+run: |
+        if [[ "${{ steps.env.outputs.environment }}" == "production" ]]; then
+          # Configuración de producción
+          cat > auditoria/config.php << 'EOF'
+        <?php
+        // CONFIGURACIÓN DE PRODUCCIÓN
+        $HOSTNAME = "${{ secrets.PROD_DB_HOST }}" ;
+        $USERNAME = "${{ secrets.PROD_DB_USER }}" ;
+        $PASSWORD = "${{ secrets.PROD_DB_PASS }}" ;
+        $DATABASE = "${{ secrets.PROD_DB_NAME }}" ;
+        $CFG_SUBCARPETA = "images" ;
+        ?>
+        EOF
+        else
+          # Configuración de desarrollo
+          cat > auditoria/config.php << 'EOF'
+        <?php
+        // CONFIGURACIÓN DE DESARROLLO
+        $HOSTNAME = "${{ secrets.DEV_DB_HOST }}" ;
+        $USERNAME = "${{ secrets.DEV_DB_USER }}" ;
+        $PASSWORD = "${{ secrets.DEV_DB_PASS }}" ;
+        $DATABASE = "${{ secrets.DEV_DB_NAME }}" ;
+        $CFG_SUBCARPETA = "images" ;
+        ?>
+        EOF
+        fi- name: 
+�
+�
+ Validate PHP syntax
+ run: |
+        find . -name "*.php" -exec php -l {} \; > /dev/null
+        echo "
+ ✅
+ PHP syntax validation passed"- name: 
+�
+�
+ Deploy to Development Server
+ if: steps.env.outputs.environment == 'development'
+ uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+ with:
+ server: ${{ secrets.DEV_FTP_HOST }}
+ username: ${{ secrets.DEV_FTP_USER }}
+ password: ${{ secrets.DEV_FTP_PASS }}
+ local-dir: ./
+ server-dir: ${{ secrets.DEV_FTP_PATH }}
+ exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/.env*
+          **/tests/**
+2. Configuración de Secrets en GitHub
+ Ve a tu repositorio → Settings → Secrets and variables → Actions
+ Secrets para Desarrollo:
+          **/.github/**
+          **/README.md
+          
+    - name: 
+�
+�
+ Deploy to Production Server
+      if: steps.env.outputs.environment == 'production'
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.PROD_FTP_HOST }}
+        username: ${{ secrets.PROD_FTP_USER }}
+        password: ${{ secrets.PROD_FTP_PASS }}
+        local-dir: ./
+        server-dir: ${{ secrets.PROD_FTP_PATH }}
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/.env*
+          **/tests/**
+          **/.github/**
+          **/README.md
+          
+    - name: 
+✅
+ Deployment Summary
+      run: |
+        echo "
+ 🎉
+ Deployment completed successfully!"
+        echo "Environment: ${{ steps.env.outputs.environment }}"
+        echo "Branch: ${{ github.ref_name }}"
+        echo "Commit: ${{ github.sha }}"
