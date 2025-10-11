@@ -77,16 +77,16 @@ jobs:
           DEV_FTP_HOST: ${{ secrets.DEV_FTP_HOST }}
           PROD_FTP_HOST: ${{ secrets.PROD_FTP_HOST }}
         run: |
-          if [ -n "$DEV_FTP_HOST" ]; then
-            echo "✅ DEV_FTP_HOST secret is loaded. -> $DEV_FTP_HOST "
+          if [ -n "${{ secrets.DEV_FTP_HOST }}" ]; then
+            echo "✅ DEV_FTP_HOST secret is loaded. -> ${{ secrets.PROD_FTP_HOST }}"
           else
             echo "❌ DEV_FTP_HOST secret is MISSING."
           fi
 
-          if [ -n "$PROD_FTP_HOST" ]; then
-            echo "✅ PROD_FTP_HOST secret is loaded. -> $PROD_FTP_HOST "
+          if [ -n "${{ secrets.PROD_FTP_HOST }}" ]; then
+            echo "✅ PROD_FTP_HOST secret is loaded. -> ${{ secrets.PROD_FTP_HOST }}"
           else
-            echo "❌ PROD_FTP_HOST secret is MISSING."
+            echo "❌ PROD_FTP_HOST secret is MISSING. $PROD_HOST"
           fi
 
       - name: Deploy to Development Server
