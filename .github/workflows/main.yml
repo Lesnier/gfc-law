@@ -15,7 +15,9 @@ jobs:
         env:
           TEST_VAR: ${{ vars.PROD_HOST }}
           TEST_VAR2: ${{ env.PROD_HOST }}
+          TEST_VAR3: "Les"
         # 2. Imprime la variable de entorno usando un comando de shell
         run:
           echo "El valor de la variable TEST_VAR es -> $TEST_VAR"
           echo "El valor de la variable TEST_VAR2 es -> $TEST_VAR2"
+          echo "El valor de la variable TEST_VAR3 es -> $TEST_VAR3"
