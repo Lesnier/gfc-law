@@ -14,5 +14,8 @@ jobs:
         # 1. Mapea la variable de GitHub a una variable de entorno del script
         env:
           TEST_VAR: ${{ vars.PROD_HOST }}
+          TEST_VAR2: ${{ env.PROD_HOST }}
         # 2. Imprime la variable de entorno usando un comando de shell
-        run: echo "El valor de la variable es -> $TEST_VAR"
+        run:
+          echo "El valor de la variable TEST_VAR es -> $TEST_VAR"
+          echo "El valor de la variable TEST_VAR2 es -> $TEST_VAR2"
