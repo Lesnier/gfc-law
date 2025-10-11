@@ -9,6 +9,7 @@ on:
 jobs:
   test-job:
     runs-on: ubuntu-latest
+    environment: production
     steps:
       - name: Print the repository variable
         # 1. Mapea la variable de GitHub a una variable de entorno del script
@@ -16,8 +17,10 @@ jobs:
           TEST_VAR: ${{ vars.PROD_HOST }}
           TEST_VAR2: ${{ env.PROD_HOST }}
           TEST_VAR3: "Les"
+          TEST_VAR4: ${{ secrets.PROD_FTP_HOST }}
         # 2. Imprime la variable de entorno usando un comando de shell
         run:
-          echo "El valor de la variable TEST_VAR es -> $TEST_VAR"
-          echo "El valor de la variable TEST_VAR2 es -> $TEST_VAR2"
-          echo "El valor de la variable TEST_VAR3 es -> $TEST_VAR3"
+          echo "El valor de la variable TEST_VAR es -> $TEST_VAR \n"
+          echo "El valor de la variable TEST_VAR2 es -> $TEST_VAR2 \n"
+          echo "El valor de la variable TEST_VAR3 es -> $TEST_VAR3 \n"
+          echo "El valor de la variable TEST_VAR4 es -> $TEST_VAR4 \n"
