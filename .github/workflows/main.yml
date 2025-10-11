@@ -1,7 +1,10 @@
-name: Print a Test Variable
+name: Print Variable on Master Push
 
-# Permite ejecutar este workflow manualmente desde la pestaña "Actions"
-on: workflow_dispatch
+# Se ejecuta automáticamente con cada push a la rama 'master'
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   test-job:
