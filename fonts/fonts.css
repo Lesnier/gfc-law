@@ -1,43 +1,78 @@
-@font-face {
-    font-family: "Inria Serif Light", serif;
-    src: url('./InriaSerif-Light.ttf') format('ttf');
+/*@font-face {*/
+/*    font-family: "Inria Serif Light", serif;*/
+/*    src: url('InriaSerif-Light.ttf') format('ttf');*/
+/*    font-weight: 300;*/
+/*    font-style: normal;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: "Inria Serif Regular";*/
+/*    src: url('InriaSerif-Regular.ttf') format('ttf');*/
+/*    font-weight: 400;*/
+/*    font-style: normal;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: "Inria Serif Bold", serif;*/
+/*    src: url('InriaSerif-Bold.ttf') format('ttf');*/
+/*    font-weight: 700;*/
+/*    font-style: normal;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: "Inria Serif light Italic", serif;*/
+/*    src: url('InriaSerif-LightItalic.ttf') format('ttf');*/
+/*    font-weight: 300;*/
+/*    font-style: italic;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: "Inria Serif light Italic", serif;*/
+/*    src: url('InriaSerif-Italic.ttf') format('ttf');*/
+/*    font-weight: 400;*/
+/*    font-style: italic;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: "Inria Serif Bold Italic", serif;*/
+/*    src: url('InriaSerif-Italic.ttf') format('ttf');*/
+/*    font-weight: 700;*/
+/*    font-style: italic;*/
+/*}*/
+
+
+.inria-serif-light {
+    font-family: "Inria Serif", serif;
     font-weight: 300;
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Inria Serif Regular", serif;
-    src: url('./InriaSerif-Regular.ttf') format('ttf');
+.inria-serif-regular {
+    font-family: "Inria Serif", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Inria Serif Bold", serif;
-    src: url('./InriaSerif-Bold.ttf') format('ttf');
+.inria-serif-bold {
+    font-family: "Inria Serif", serif;
     font-weight: 700;
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Inria Serif light Italic", serif;
-    src: url('./InriaSerif-LightItalic.ttf') format('ttf');
+.inria-serif-light-italic {
+    font-family: "Inria Serif", serif;
     font-weight: 300;
     font-style: italic;
 }
 
-@font-face {
-    font-family: "Inria Serif light Italic", serif;
-    src: url('./InriaSerif-Italic.ttf') format('ttf');
+.inria-serif-regular-italic {
+    font-family: "Inria Serif", serif;
     font-weight: 400;
     font-style: italic;
 }
 
-@font-face {
-    font-family: "Inria Serif Bold Italic", serif;
-    src: url('./InriaSerif-Italic.ttf') format('ttf');
+.inria-serif-bold-italic {
+    font-family: "Inria Serif", serif;
     font-weight: 700;
     font-style: italic;
 }
-
-
