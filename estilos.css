@@ -64,7 +64,7 @@
 	height:21px;
 	z-index:2;
 	left: 781px;
-	top: 18px;
+	top: 25px;
 	font-family: "Lucida Sans Unicode", Calibri, Helvetica-Narrow;
 	font-size: 11px;
 	color: #666;
@@ -75,7 +75,7 @@
 	width:629px;
 	height:78px;
 	z-index:3;
-	left: 339px;
+	left: 380px;
 	top: 75px;
 }
 #botonera2 {
@@ -224,3 +224,97 @@ a.estilo4:link {
 .versales {
 	font-variant: small-caps;
 }
+
+
+/*Nuevos estilos HFC*/
+
+.bar-menu {
+	background-color: #1C2C39;
+	height: 45px;
+	padding: 5px 0 5px 0;
+	border-bottom: 5px solid #E3BE58;
+	border-image: linear-gradient(90deg,#E3BE58, #FFE8AA, #E3BE58) 1;
+}
+
+#botonera2 > table > tbody > tr > td > a {
+	color: #FFF;
+	transition: all 0.1s ease-in-out 0s;
+	display: inline-block;
+	font-size: 18px;
+}
+
+#botonera2 > table > tbody > tr > td > a:hover {
+	color: #FFE8AA;
+	transform: scale(1.05);
+}
+
+.bar-menu-separator{
+	color: #5A809E;
+}
+
+.banner{
+	margin-top: 10px;
+}
+
+.logo{
+	float: left;
+}
+
+.general-menu {
+	float: right;
+}
+
+#botonera1 a {
+	font-size: 18px;
+	transition: all 0.1s ease-in-out 0s;
+	display: inline-block;
+}
+
+
+#botonera1 a:hover {
+	text-decoration: none;
+	color: #9f7d25;
+	transform: scale(1.1);
+}
+
+#botonera1 a:active {
+	text-decoration: none;
+	color: #E3BE58FF;
+	transform: scale(1.1);
+}
+
+#botonera1 a {
+	text-decoration: none;
+	color: #1C2C39;
+}
+
+
+
+#idiomas .language-bar {
+	background-color: #FFE8AA;
+	padding: 5px 6px 5px 6px;
+}
+
+#idiomas .language-bar-separator {
+	background-color: #FFE8AA;
+	padding: 5px 3px 5px 3px;
+}
+
+#idiomas .social-bar {
+	background-color: #1C2C39;
+	padding: 5px 6px 5px 6px;
+}
+
+#idiomas .social-bar-separator {
+	background-color: #1C2C39;
+	padding: 5px 3px 5px 3px;
+}
+
+#idiomas a {
+	font-size: 14px;
+	padding: 5px 6px 2px 6px;
+	color: #1C2C39;
+}
+
+
+
