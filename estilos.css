@@ -240,6 +240,8 @@ a.estilo4:link {
 	transition: all 0.1s ease-in-out 0s;
 	display: inline-block;
 	font-size: 18px;
+	text-decoration: none;
+
 }
 
 #botonera2 > table > tbody > tr > td > a:hover {
@@ -251,7 +253,7 @@ a.estilo4:link {
 	color: #5A809E;
 }
 
-.banner{
+#banner_foto{
 	margin-top: 10px;
 }
 
@@ -332,6 +334,51 @@ a.estilo4:link {
 	background: linear-gradient(90deg,#E3BE58, #BD9A3B, #E3BE58) ;
 	padding: 4px 0 3px 0 ;
 }
+
+#areas_vs > ul > li  {
+	padding: 5px 0 5px 5px ;
+	border-bottom: 1px solid #E3BE58;
+	list-style-type: none;
+
+}
+
+#areas_vs > ul > li > a:link {
+	color: #4b4588;
+	text-decoration: none;
+}
+
+#areas_vs > ul > li > a:visited {
+	text-decoration: none;
+	color: #4b4588;
+}
+
+#areas_vs > ul > li > a:hover {
+	color: #1C2C39;
+}
+
+#areas_vs > ul > li:hover {
+	background-color: #FFE8AA;
+}
+
+#areas_vs > ul > li.active {
+	background-color: #FFE8AA;
+}
+#areas_vs > ul > li.active > a {
+	color: #1C2C39;
+}
+
+#areas_vs {
+	position: absolute;
+	width: 320px;
+	height: 441px;
+	z-index: 5;
+	left: -40px;
+	top: 494px;
+	text-align: left;
+}
+
+
+
 
 
 
