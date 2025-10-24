@@ -1,11 +1,11 @@
 <?php
 //PRODUCCION
 //----------
-$HOSTNAME = "190.210.180.106" ; //SERVIDOR
-$USERNAME = "Admin" ;            //USUARIO
-$PASSWORD = "2kAdmin24458" ;    //CONTRASENA
-$DATABASE = "ayc" ;            //BASE DE DATOS
-$CFG_SUBCARPETA="images" ;     //logos
+//$HOSTNAME = "190.210.180.106" ; //SERVIDOR
+//$USERNAME = "Admin" ;            //USUARIO
+//$PASSWORD = "2kAdmin24458" ;    //CONTRASENA
+//$DATABASE = "ayc" ;            //BASE DE DATOS
+//$CFG_SUBCARPETA="images" ;     //logos
 
 //DESARROLLO
 //----------
@@ -17,9 +17,10 @@ $CFG_SUBCARPETA="images" ;     //logos
 
 //LOCAL
 //-----
-//$HOSTNAME = "localhost" ;       //SERVIDOR
-//$USERNAME = "root" ;            //USUARIO
+$HOSTNAME = "localhost" ;       //SERVIDOR
+$USERNAME = "root" ;            //USUARIO
+$PASSWORD = "" ;        //CONTRASENA
 //$PASSWORD = "vertrigo" ;        //CONTRASENA
-//$DATABASE = "ayc20100828" ;     //BASE DE DATOS
-//$CFG_SUBCARPETA="images" ;      //logos
+$DATABASE = "ayc20100828" ;     //BASE DE DATOS
+$CFG_SUBCARPETA="images" ;      //logos
 ?>

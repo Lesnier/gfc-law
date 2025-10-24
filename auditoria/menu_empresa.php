@@ -17,11 +17,11 @@ if (isset($_POST['Identif_digitado'])){
 	$sql .= "INNER JOIN proveedores P ON L.IdProveedor = P.IdProveedor " ;
 	$sql .= "WHERE L.Identificacion = '" . $_POST['Identif_digitado'] . "' " ;
 	$sql .= "  AND P.IdEmpresa = '" . $_SESSION['IdEmpresa'] . "' " ;
-	$userQuery = mysql_query($sql) or die (mysql_error () ) ;
-	$userArray = mysql_fetch_array($userQuery) ;
+	$userQuery = mysqli_query($cnx,$sql) or die (mysqli_error ($cnx) ) ;
+	$userArray = mysqli_fetch_array($userQuery) ;
 
 	//revisamos el empleado
-	if (mysql_num_rows ($userQuery) > 0) {
+	if (mysqli_num_rows ($userQuery) > 0) {
 		//empleado existe, seguimos
 		if ((date("Y-m-d") < $userArray ['VigenciaDesde'] && $userArray ['VigenciaDesde'] != "0000-00-00") 
 		 or (date("Y-m-d") > $userArray ['VigenciaHasta'] && $userArray ['VigenciaHasta'] != "0000-00-00")){ 
@@ -30,7 +30,7 @@ if (isset($_POST['Identif_digitado'])){
 		}
 	} else {
 		// Si no se encontraron userArrays
-		$message = "<DIV STYLE=\"background-color:yellow\">El DNI <B>" . $_POST['DNI_digitado'] . "</B> no está ingresada en la base</DIV>";
+		$message = "<DIV STYLE=\"background-color:yellow\">El DNI <B>" . $_POST['DNI_digitado'] . "</B> no estï¿½ ingresada en la base</DIV>";
 	}
 }
 //Termina de validar los datos de la base
@@ -127,7 +127,7 @@ if (isset($_POST['Identif_digitado'])){
         <tr>
         <td>&nbsp;  </td>
 		<td align="right">
-			<input type="hidden" name="SubmitIdentif" value="Submit">
+			<input type="submit" name="SubmitIdentif" value="Submit">
 			<input type="image" src="images/enviar.gif" alt="enviar">
 		</td>
         </tr>

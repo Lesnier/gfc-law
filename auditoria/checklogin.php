@@ -1,14 +1,22 @@
 <?php
 //revisamos si es login por sesiones o por formulario
 
+$message="";
+$usuario=null;
 if (!isset($_POST['usuario_digitado']) && !isset($_POST['clave_digitada'])) {
-	session_start() ;
+	
+	if(isset($_SESSION['usuario'])){
+		session_start() ;
 	//usamos los valores de las sesiones 
 	// si no se ha pasado por la pagina de login, 
 	// las variables no quedaran definidas y mas abajo se envìa la pagina de login)
+	
 	$usuario = $_SESSION['usuario'];
 	$clave = $_SESSION['clave'];
+	}
+	
 }else{
+	
 	//usamos los datos ingresados (se esta recibiendo la pagina de login)
 	session_start() ; 
 	//borramos las sessiones por si existen
@@ -35,12 +43,14 @@ if (!$clave) {
 //nos conectamos a la bd
 $cnx = conectar();
 //buscamos al usuario
-$chlogQuery = mysql_query("SELECT * FROM empresas WHERE Usuario = '" . $usuario . "'") or die (mysql_error () ) ;
-$chlogArray = mysql_fetch_array($chlogQuery) ;
+$chlogQuery = mysqli_query($cnx,"SELECT * FROM empresas WHERE Usuario = '" . $usuario . "'") or die (mysqli_error ($cnx) ) ;
+$chlogArray = mysqli_fetch_array($chlogQuery) ;
 
 //revisamos usuario y password
-if (mysql_num_rows ($chlogQuery) > 0) {
+if (mysqli_num_rows ($chlogQuery) > 0) {
 	//usuario existe, seguimos
+
+	echo $chlogArray ['Usuario'];
 	if ($usuario != $chlogArray ['Usuario'] ) {
 		//caso sensitivo, usuario no está presente en bd
 		$message = "Usuario no Existe";

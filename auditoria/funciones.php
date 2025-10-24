@@ -4,10 +4,19 @@ funci�n conectar
 que = se conecta a MySQL y devuelve el identificador de conexi�n
 ***/
 function conectar(){
-  global $HOSTNAME,$USERNAME,$PASSWORD,$DATABASE;
-  $idcnx = mysqli_connect($HOSTNAME, $USERNAME, $PASSWORD, 'mydb') or
-    DIE (mysql_error());
-  mysql_select_db($DATABASE, $idcnx);
+  global $HOSTNAME, $USERNAME, $PASSWORD, $DATABASE;
+  
+  // Usamos mysqli_connect() para conectar Y seleccionar la BBDD (usando $DATABASE)
+  $idcnx = mysqli_connect($HOSTNAME, $USERNAME, $PASSWORD, $DATABASE); 
+
+  // Comprobamos la conexión usando funciones 'mysqli_'
+  if (!$idcnx) {
+    // Usamos mysqli_connect_error() para ver el error
+    DIE ("Error de conexión: " . mysqli_connect_error());
+  }
+
+  // La línea mysql_select_db() se elimina porque ya no es necesaria.
+  
   return $idcnx;
 }
 
