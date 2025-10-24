@@ -9,54 +9,11 @@ body {
 	margin-top: 0px;
 }
 </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="fonts/fonts.css" rel="stylesheet" type="text/css"/>
 <link href="estilos.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
-a {
-	font-family: Calibri, Candara, "Lucida Sans Unicode";
-}
-a:link {
-	color: #000;
-	text-decoration: none;
-}
-a:visited {
-	text-decoration: none;
-	color: #666;
-}
-a:hover {
-	text-decoration: none;
-	color: #76102A;
-}
-a:active {
-	text-decoration: none;
-	color: #76102A;
-	font-size: 10px;
-}
-#foto_socio {
-	position:absolute;
-	width:200px;
-	height:252px;
-	z-index:1;
-	left: 0px;
-	top: 13px;
-}
-#socio_txt {
-	position:absolute;
-	width:433px;
-	height:329px;
-	z-index:2;
-	left: 17px;
-	top: 12px;
-	text-align: left;
-}
-#areas_vs {
-	position:absolute;
-	width:284px;
-	height:382px;
-	z-index:5;
-	left: 12px;
-	top: 546px;
-	text-align: left;
-}
+
 #div_clientes {
 	position:absolute;
 	width:978px;
@@ -64,7 +21,7 @@ a:active {
 	z-index:5;
 	left: 11px;
 	top: 513px;
-	font-family: "Lucida Sans Unicode", Calibri, Helvetica-Narrow;
+	/*font-family: "Lucida Sans Unicode", Calibri, Helvetica-Narrow;*/
 	font-size: 11px;
 	line-height: 30px;
 	text-align: center;
@@ -98,53 +55,97 @@ function MM_swapImage() { //v3.0
 <body onload="MM_preloadImages('imas/botoneras/clientes2.png','imas/botoneras/profesionales2.png','imas/botoneras/areas2.png','imas/botoneras/seminarios2.png','imas/botoneras/corresponsales2.png','imas/botoneras/clientesB.png','imas/botoneras/portugues2.png','imas/botoneras/ingles2.png','imas/botoneras/auditorias_on.png','imas/botoneras/portugues2a.png')">
 <div id="wrap_general">
   <div id="wrap_contenedor1">
-    <div id="header">
-      <div id="header_logo"><img src="imas/logo.png" width="195" height="160" /></div>
-      <div id="botonera1">
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="48%" align="right" valign="middle"><a href="auditorias_es.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('audi','','imas/botoneras/auditorias_on.png',1)"><img src="imas/botoneras/auditorias1.png" name="audi" width="110" height="66" border="0" id="audi" /></a></td>
-            <td width="24%" align="center" valign="middle"><a href="Contacto.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('clientes','','imas/botoneras/clientes2.png',1)"><img src="imas/botoneras/clientes.png" name="clientes" width="110" height="66" border="0" id="clientes" /></a></td>
-            <td width="28%" align="right" valign="top"><map name="Map2" id="Map2222">
-              <area shape="rect" coords="1,5,26,26" href="Institucional.html" />
-            </map>
-              <img src="imas/botoneras/home.png" width="27" height="27" border="0" usemap="#Map2" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <map name="Map2" id="Map42">
-                <area shape="rect" coords="4,4,39,34" href="Institucional.html" />
-              </map>
-              <img src="imas/botoneras/redes.png" width="106" height="25" border="0" usemap="#Map" />
-              <map name="Map" id="Map4">
-                <area shape="rect" coords="5,5,25,24" href="https://twitter.com/AmatoCastro" target="_blank" />
-                <area shape="rect" coords="40,4,102,23" href="https://www.linkedin.com/company/amato-&amp;-castro-abogados?trk=top_nav_home" target="_blank" />
-              </map>
-              <map name="Map" id="Map4">
-                <area shape="rect" coords="4,4,24,23" href="https://www.linkedin.com/company/amato-&amp;-castro-abogados?trk=top_nav_home" target="_blank" />
-                <area shape="rect" coords="40,4,102,23" href="https://twitter.com/AmatoCastro" target="_blank" />
-              </map></td>
-          </tr>
-        </table>
-        <map name="Map" id="Map">
-          <area shape="rect" coords="4,4,24,23" href="https://www.linkedin.com/company/amato-&amp;-castro-abogados?trk=top_nav_home" target="_blank" />
-          <area shape="rect" coords="40,4,102,23" href="https://twitter.com/AmatoCastro" target="_blank" />
-        </map>
+
+
+      <div id="header">
+
+
+
+          <!--START Logo -->
+
+          <div class="logo"><img src="imas/logo_intro_new.png" width="140" height="auto"/></div>
+
+          <!--END Logo-->
+
+
+
+
+          <!--START Idioma y Redes -->
+
+          <div id="idiomas" class="inria-serif-regular">
+              <table class="general-menu" width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                      <td align="center" class="language-bar" valign="middle"><a href="Institucional Portugues.html">PORTUGUÊS</a></td>
+                      <td  class="language-bar" >|</td>
+                      <td align="center" valign="middle" class="language-bar" ><a href="Institutional.html">ENGLISH</a></td>
+                      <td class="language-bar-separator"></td>
+                      <td class="social-bar-separator"></td>
+                      <td align="center" valign="middle" class="social-bar">
+                          <a href="https://twitter.com/AmatoCastro" target="_blank">
+                              <img valign="middle" src="imas/X_logo.png" width="18" height="18" border="0" />
+                          </a>
+                      </td>
+                      <td class="social-bar-separator">|</td>
+                      <td align="center" valign="middle" class="social-bar">
+                          <a href="https://www.linkedin.com/company/amato-&amp;-castro-abogados?trk=top_nav_home" target="_blank">
+                              <img valign="middle" src="imas/Linkedin_logo.png" width="18" height="18" border="0" />
+                          </a>
+                      </td>
+                  </tr>
+              </table>
+          </div>
+
+          <!--START Idioma y Redes -->
+
+
+
+
+          <!--START Menú General -->
+
+          <div id="botonera1" class="inria-serif-regular">
+              <table class="general-menu" width="55%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                      <td align="center" valign="middle"><a href="Institucional.html">INICIO</a></td>
+                      <td class="bar-menu-separator">|</td>
+                      <td align="center" valign="middle"><a href="auditorias_es.html">AUDITORIAS</a></td>
+                      <td class="bar-menu-separator">|</td>
+                      <td align="center" valign="middle"><a href="Contacto.html">CONTACTO</a></td>
+                  </tr>
+              </table>
+          </div>
+
+          <!--END Menú General -->
+
+
+
+
+          <!--START Barra de Menú-->
+
+          <div id="botonera2" class="bar-menu inria-serif-regular">
+              <table width="100%" height="29" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                      <td width="214" align="center" valign="middle"><a href="Areas de Practica.html">Áreas de Prácticas</a></td>
+                      <td class="bar-menu-separator">|</td>
+                      <td width="257" align="center" valign="middle"><a href="Seminarios y Capacitacion.html">Seminarios y Capacitación</a></td>
+                      <td class="bar-menu-separator">|</td>
+                      <td width="216" align="center" valign="middle"><a href="Corresponsales.html">Corresponsales</a></td>
+                      <td class="bar-menu-separator">|</td>
+                      <td width="141" align="center" valign="middle"><a href="Clientes.html">Clientes</a>
+                      </td>
+                      <td class="bar-menu-separator">|</td>
+                      <td width="172" align="center" valign="middle"><a href="Integrantes.html">Equipo</a></td>
+                  </tr>
+              </table>
+          </div>
+
+          <!--END Barra de Menú-->
+
       </div>
-<div id="idiomas"><a href="Institucional Portugues.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('port','','imas/botoneras/portugues2a.png',1)"><img src="imas/botoneras/portugues1a.png" name="port" width="93" height="16" border="0" align="absmiddle" id="port" /></a><a href="Institucional Portugues.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('port','','imas/botoneras/portugues2.png',1)"></a><img src="imas/botoneras/idioma_palo.png" width="18" height="22" align="absmiddle" /><a href="Institutional.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('ingl','','imas/botoneras/ingles2.png',1)"><img src="imas/botoneras/ingles1.png" name="ingl" width="93" height="16" border="0" align="absmiddle" id="ingl" /></a></div>
-<div id="botonera2">
-  <table width="100%" height="29" border="0" align="center" cellpadding="0" cellspacing="0">
-    <tr>
-      <td width="214" align="center" valign="middle"><a href="Areas de Practica.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('areas','','imas/botoneras/areas2.png',1)"><img src="imas/botoneras/areas1.png" name="areas" width="207" height="24" border="0" id="areas" /></a></td>
-      <td width="257" align="center" valign="middle"><a href="Seminarios y Capacitacion.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('sem','','imas/botoneras/seminarios2.png',1)"><img src="imas/botoneras/seminarios1.png" name="sem" width="207" height="24" border="0" id="sem" /></a></td>
-      <td width="216" align="center" valign="middle"><a href="Corresponsales.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('corres','','imas/botoneras/corresponsales2.png',1)"><img src="imas/botoneras/corresponsales1.png" name="corres" width="207" height="24" border="0" id="corres" /></a></td>
-      <td width="141" align="center" valign="middle"><a href="clientes_es.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('clie','','imas/botoneras/clientesB.png',1)"><img src="imas/botoneras/clientesA.png" name="clie" width="116" height="23" border="0" id="clie" /></a></td>
-      <td width="172" align="center" valign="middle"><a href="Integrantes.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('PROF','','imas/botoneras/profesionales2.png',1)"><img src="imas/botoneras/profesionales1.png" name="PROF" width="128" height="24" border="0" id="PROF" /></a></td>
-    </tr>
-  </table>
-</div>
-    </div>
+
     <div id="banner_foto"><img src="imas/banner_foto_clientes.jpg" width="1000" height="256" /></div>
-    <div id="pie"></div>
-    <div id="div_clientes">
-      <table width="95%" height="445" border="0" align="center">
+
+    <div id="div_clientes" class="inria-serif-regular" style="font-size: 14px">
+      <table width="100%" height="445" border="0" align="center">
         <tbody>
           <tr>
             <td width="33%" align="left" valign="top"><p align="left">ALHSTROM LOUVEIRA  LTD. <br />
@@ -195,10 +196,23 @@ UPSTREAM SUPPLY CHAIN SOLUTIONS L.L.C.</p></td>
           </tr>
         </tbody>
       </table>
-      <p class="blaind">Estudio juridico. Estudio de Abogados. Legales. Legal. Asesoramiernto Juridico. Estudio Juridico Argentina. Abogados en Argentina  Hernan Castro. Hernan Facundo Castro. Laura Lorena Amato. Laura Amato. Derecho Laboral. AyC Abogados. Letrados. Auditoria Legal a Proveedores.</p>
+<!--      <p class="blaind">Estudio juridico. Estudio de Abogados. Legales. Legal. Asesoramiernto Juridico. Estudio Juridico Argentina. Abogados en Argentina  Hernan Castro. Hernan Facundo Castro. Laura Lorena Amato. Laura Amato. Derecho Laboral. AyC Abogados. Letrados. Auditoria Legal a Proveedores.</p>-->
     </div>
+
+      <!--START Banner-->
+
+      <div id="pie" style="top: 1050px">
+          <p class="footer-address inria-serif-regular">Av. Leandro N. Alem 668 - 5to Piso . T (5411) 5272 0540 . FAX  (5411) 5272 0541 . C1001AAO</p>
+          <p class="footer-city inria-serif-regular">Buenos Aires - Argentina</p>
+          <p class="footer-copy-rigth inria-serif-regular">COPYRIGTH 2005 - 2025 - WWW.AYC-ABOGADOS.COM.AR</p>
+      </div>
+
+      <!--END Banner-->
+
   </div>
 </div>
+
+
 <map name="Map2" id="Map2">
   <area shape="rect" coords="4,4,39,34" href="#" />
 </map>
@@ -209,5 +223,7 @@ UPSTREAM SUPPLY CHAIN SOLUTIONS L.L.C.</p></td>
 <map name="Map3" id="Map3">
   <area shape="rect" coords="4,11,39,32" href="#" />
 </map>
+
+
 </body>
 </html>

@@ -106,6 +106,18 @@
 	text-decoration: none;
 	line-height: 16px;
 }
+#textos_members_div {
+	position:absolute;
+	width:638px;
+	height:627px;
+	z-index:3;
+	left: 326px;
+	top: 495px;
+	text-align: justify;
+	font-size: 16px;
+	text-decoration: none;
+	line-height: 16px;
+}
 .txt_sub_bot_socios {
 	font-family: "Trajan Pro", Georgia, Candara;
 	font-size: 12px;
